@@ -1,0 +1,258 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.div1_2{
+    padding: 0 35px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.div1 > i, .div2 > a {
+    padding: 0 10px;
+    color: yellowgreen;
+    text-decoration: none;
+}
+.div2{
+    float: right;
+    justify-self: right;
+}
+#nav{
+    width: 80%;
+    margin: 0 auto;
+}
+.bannerimg1{
+    position: relative;
+    background-image: url(../images/banner1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    text-align: center;
+}
+.bannerimg2{
+    position: relative;
+    background-image: url(../images/banner11.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    text-align: center;
+}
+.bannerimg3{
+    position: relative;
+    background-image: url(../images/banner3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    text-align: center;
+}
+.loginnow, .getstarted{
+    margin: 260px 15px 0px;
+}
+.loginnow>a, .getstarted>a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.bannerunder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #000;
+    color: white;
+}
+.divbtcusd{
+    border-right: white 2px solid;
+    text-align: center;
+}
+.btcusd{
+    float: right;
+    color: yellowgreen;
+    font-size: 30px;
+    margin-right: 25px;
+}
+
+
+
+
+.servicesection, .why{
+    width: 80%;
+    margin: 30px auto;
+}
+.serviceheading{
+    text-align: center;
+    color: green;
+    font-family: Helvetica;
+}
+.servicediv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+.service{
+    border: 1px solid yellowgreen;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+}
+.serviceimg{
+    margin-top: 15px;
+}
+.servicename{
+    text-align: center;
+    font-weight: 500;
+}
+.servicedescription{
+    text-align: center;
+}
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: 45%;
+    background-color: yellowgreen;
+    margin: 0px auto;
+    color: #fff;
+    font-weight: bolder;
+}
+.why{
+    text-align: center;
+    background-color: thistle;
+}
+.whyhead{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+footer{
+    font-weight: normal;
+    text-align: center;
+}
+.foot1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: black;
+    color: #fff;
+    padding: 15px;
+}
+.foot2{
+    background-color: rgb(20, 189, 62);
+    color: #fff;
+    padding: 10px;
+}
+.menus{
+    background-color: yellowgreen;
+}
+.menus ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 5px;
+    margin: 0 15px;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    color: black;
+    font-weight: bold;
+}
+.menus ul a{
+    color: black;
+}
+.menus ul a:hover{
+    background-color: black;
+    color: yellowgreen;
+    padding: 5px;
+    text-decoration: none;
+}
+.menus li{
+    padding: 5px;
+}
+.menus i{
+    margin-right: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Extra small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) { 
+    .servicediv{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+    .menus ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 5px;
+        margin: 0 15px;
+        text-align: center;
+        justify-content: center;
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+        border-bottom: orange 1px solid;
+    }
+
+    
+    .button-box{
+        width: 90%;
+        margin: 30px auto;
+        position: relative;
+        box-shadow: 0 0 20px 9px yellowgreen;
+        border-radius: 30px;
+    
+    }
+    
+        
+
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) { 
+    .servicediv{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+    }
+    .menus ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 5px;
+        margin: 0 15px;
+        text-align: center;
+        justify-content: center;
+        justify-self: center;
+        color: black;
+        font-weight: bold;
+    }
+    
+        
+
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+
+ }

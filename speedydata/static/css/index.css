@@ -1,0 +1,53 @@
+
+.dataplans{
+    text-align: center;
+}
+.dataplans > h3, .about>h3  .partner>h3{
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.plans{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+}
+.networkplan{
+    padding: 5px;
+    margin: 5px;
+}
+.networkplan > img{
+    margin-top: 10px;
+}
+.mtn{
+    background-color: yellow;
+}
+.glo{
+    background-color: greenyellow;
+}
+.airtel{
+    background-color: red;
+}
+.etisalat{
+    background-color: green;
+}
+.about{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: grey;
+}
+.partner{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 30px;
+}
+.partner >div > img{
+    margin: 15px 40px;
+    width: 90px;
+    height: 90px;
+}
+
+

@@ -1,0 +1,225 @@
+
+{% extends "shared/base.html" %}
+{% load static %}
+
+
+{% block title %}
+Speedy Data Subscribe
+{% endblock title %}
+
+
+
+{% block main %}
+<section class="banner">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item bannerimg1 active">
+            <!-- <img class="bannerimg" src=" " class="d-block w-100" alt="..."> -->
+            <div class="getstarted btn btn-success"><a href="#">Get Started</a></div>
+            <div class="loginnow btn btn-warning"><a href="#">Login Now</a></div>
+          </div>
+          <div class="carousel-item bannerimg2">
+            <!-- <img class="bannerimg" src=" " class="d-block w-100" alt="..."> -->
+            <div class="getstarted btn btn-success"><a href="#">Get Started</a></div>
+            <div class="loginnow btn btn-warning"><a href="#">Login Now</a></div>
+          </div>
+          <div class="carousel-item bannerimg3">
+            <!-- <img class="bannerimg" src="" class="d-block w-100" alt="..."> -->
+            <div class="getstarted btn btn-success"><a href="#">Get Started</a></div>
+            <div class="loginnow btn btn-warning"><a href="{% url 'signin' %}">Login Now</a></div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+        <div class="bannerunder" style="display: grid; grid-template-columns: 1fr 1fr 1fr; background-color: black; color: white;">
+            <div class="divbtcusd">
+                <div>
+                    BTC/USD
+                    <i class="fa fa-caret-down btcusd" aria-hidden="true"></i>
+                </div>
+                <h4>34045.94</h4>    
+            </div>
+            <div class="divbtcusd">
+                <div>
+                    BTC/USD
+                    <i class="fa fa-caret-down btcusd" aria-hidden="true"></i>
+                </div>
+                <h4>17645.28</h4>    
+            </div>
+            <div class="divbtcusd">
+                <div>
+                    BTC/USD
+                    <i class="fa fa-caret-down btcusd" aria-hidden="true"></i>
+                </div>
+                <h4>19045.34</h4>    
+            </div>
+
+        </div>
+</section>
+
+<section class="servicesection" id="servicesection">
+  <h4 class="serviceheading">SERVICE</h4>
+  <div class="servicediv">
+    <div class="service">
+      <span class="avatar"> > </span>
+      <img class="serviceimg" src="{% static 'images/data-topup.png' %}" alt="">
+      <h4 class="servicename">Data Top-Up</h4>
+      <h6 class="servicedescription">Our Data service is 100% automated and at a very affordable rate.</h6>
+    </div>
+    <div class="service">
+      <span class="avatar"> > </span>
+      <img class="serviceimg" src="{% static 'images/airtime-to-cash.jpg' %}" alt="">
+      <h4 class="servicename">Airtime 2 Cash</h4>
+      <h6 class="servicedescription">Worry less on mistakenly loaded airtime. We convert airtime to cash at a Jolly percentage</h6>
+    </div>
+    <div class="service">
+      <span class="avatar"> > </span>
+      <img class="serviceimg" src="{% static 'images/airtime-topup.png' %}" alt="">
+      <h4 class="servicename">Airtime Top-Up</h4>
+      <h6 class="servicedescription">Load you phone with airtime from speedydata and enjoy seamless bonuses</h6>
+    </div>
+    <div class="service">
+      <span class="avatar"> > </span>
+      <img class="serviceimg" src="{% static 'images/bills-payment1.jpg' %}" alt="">
+      <h4 class="servicename">Bills Payment</h4>
+      <h6 class="servicedescription">Pay all forms of bill at a discount rate</h6>
+    </div>
+    <div class="service">
+      <span class="avatar"> > </span>
+      <img class="serviceimg" src="{% static 'images/airtime-swap.jpg' %}" alt="">
+      <h4 class="servicename">Airtime Swap</h4>
+      <h6 class="servicedescription">You can convinently swap airtime between different networks within Nigeria.</h6>
+    </div>
+    <div class="service">
+      <span class="avatar"> > </span>
+      <img class="serviceimg" src="{% static 'images/bitcoins.jpg' %}" alt="">
+      <h4 class="servicename">Other Services</h4>
+      <h6 class="servicedescription">We also offer other services including Forex, Bitcoins trading, Euterium etc.</h6>
+    </div>
+
+  </div>
+</section>
+<section class="why">
+  <div class="whyhead">Why You Should Choose Us</div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellat culpa autem mollitia provident quae eveniet perspiciatis cum tempore similique earum magni fugiat est cupiditate rerum aliquam harum, quo facilis tempora alias quisquam velit ipsa! Dolor vel dolores neque dolore recusandae suscipit temporibus fuga id nostrum iusto? Numquam debitis dolore ullam a unde inventore quo nulla enim doloribus similique, repellendus molestiae sit, architecto saepe aspernatur? Explicabo maiores id doloribus dignissimos voluptates cumque provident, consequuntur labore, molestias molestiae perspiciatis consequatur magnam tenetur quo assumenda! Earum voluptates eum iure beatae dolores dicta nobis assumenda. Modi quam labore ut dolorem architecto incidunt cumque earum totam?</p>
+
+</section>
+
+<section class="dataplans" id="dataplans">
+  <h3>Our Data Plans and Prices for all Network</h3>
+  <div class="plans">
+    <div class="networkplan mtn">
+      <img width="50px" height="50px" src="{% static 'images/mtn.jpg' %}" alt="">
+      <h5>MTN - SME DATA</h5>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>Dial *461*4# to chek balance</p>
+      <h5>MTN - GIFTING DATA</h5>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>Dial *131*4# to chek balance</p>
+      <button class="btn btn-light">Buy Now</button>
+    </div>
+    <div class="networkplan glo">
+      <img width="50px" height="50px" src="{% static 'images/glo.jpg' %}" alt="">
+      <h5>MTN - SME DATA</h5>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>Dial *461*4# to chek balance</p>
+      <h5>MTN - GIFTING DATA</h5>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>Dial *131*4# to chek balance</p>
+      <button class="btn btn-light">Buy Now</button>
+    </div>
+    <div class="networkplan airtel">
+      <img width="50px" height="50px" src="{% static 'images/airtel.png' %}" alt="">
+      <h5>MTN - SME DATA</h5>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>Dial *461*4# to chek balance</p>
+      <h5>MTN - GIFTING DATA</h5>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>Dial *131*4# to chek balance</p>
+      <button class="btn btn-light">Buy Now</button>
+    </div>
+    <div class="networkplan etisalat">
+      <img width="50px" height="50px" src="{% static 'images/etisalat.jpg' %}" alt="">
+      <h5>MTN - SME DATA</h5>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>Dial *461*4# to chek balance</p>
+      <h5>MTN - GIFTING DATA</h5>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>500mb = N200</p>
+      <p>Dial *131*4# to chek balance</p>
+      <button class="btn btn-light">Buy Now</button>
+    </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <h3>About SpeedyData</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore corporis quae culpa, dicta delectus deleniti odio sit reiciendis odit sapiente nesciunt. Aspernatur, porro? Dolores eius deserunt quas nulla minus quos ea optio quibusdam neque recusandae. Ut delectus natus eius ducimus, saepe soluta id alias nobis earum iste corrupti! Aliquam fugiat cum ex voluptates dignissimos autem aut praesentium ratione minus atque amet earum veniam vitae minima doloremque a ea, sunt magni, optio labore exercitationem officiis, repudiandae repellendus hic! Quae, minus nobis sint vel minima corrupti voluptates quidem ut iusto saepe eum a. Qui asperiores saepe dolorum perferendis cupiditate adipisci temporibus, similique harum quis rerum animi cum ut at tempore ratione accusantium blanditiis alias. Est dicta quos voluptatem officia maxime provident aperiam quae cum corrupti ipsum beatae saepe, corporis maiores asperiores placeat tenetur sint incidunt laudantium quidem illum enim. Exercitationem, nihil sunt quo iure modi ad officia aut maiores, nesciunt dolores non obcaecati adipisci voluptatum! Minima praesentium eaque quidem voluptatibus cumque maiores fuga quos officia totam iste in porro ea quia repellat, voluptate voluptatem. Velit omnis, eligendi vel eveniet id veniam? Quibusdam ut, quaerat laboriosam voluptas provident debitis, eos aut dolorum molestias earum iure commodi, soluta obcaecati unde tempora minus voluptates et.</p>
+</section>
+
+<section class="partner" id="api">
+  <h3>Our Partners in Telecom Services</h3>
+  <div>
+    <img  src="{% static 'images/mytlogo.png' %}" alt="partners logo">
+    <img  src="{% static 'images/clogo1.png' %}" alt="partners logo">
+    <img  src="{% static 'images/clogo2.png' %}" alt="partners logo">
+    <img  src="{% static 'images/clogo3.png' %}" alt="partners logo">
+    <img  src="{% static 'images/logo6.png' %}" alt="partners logo">
+    <img  src="{% static 'images/airtel.png' %}" alt="partners logo">
+  
+  </div>
+</section>
+
+
+{% endblock main %}

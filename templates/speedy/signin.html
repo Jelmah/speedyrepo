@@ -1,0 +1,50 @@
+
+{% extends "shared/base.html" %}
+{% load static %}
+
+
+{% block title %}
+  Registration Page
+{% endblock title %}
+
+
+{% block main %}
+  <section>
+      <div class="hero">
+          <div class="form-box">
+              <div class="button-box">
+                  <div id="btn"></div>
+                  <button type="button" class="toggle-btn btn" onclick="login()">Login</button>
+                  <button type="button" class="toggle-btn btn" onclick="register()">Register</button>
+              </div>
+              <div class="social-icon div1">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                <i class="fa fa-phone-square" aria-hidden="true"></i>        
+              </div>
+              <form action="" class="input-group" id="formsignin" method="POST">
+                {% csrf_token %}
+                  <input type="text" class="input-field" placeholder="User Id" required>
+                  <input type="password" class="input-field" placeholder="Enter Password" required>
+                  <input type="checkbox" class="checkbox"><span class="checkspan">Remember Password</span>
+                  <button type="submit" class="submit-btn">Login</button>
+              </form>
+              <form action="" class="input-group" id="formsignup" method="POST">
+                {% csrf_token %}
+                <input type="text" class="input-field" name="username" placeholder="User Name" required>
+                <input type="email" class="input-field" name="useremail" placeholder="User Email" required>
+                <input type="number" class="input-field" name="phonenum" placeholder="User Phone Number" required>
+                <input type="text" class="input-field" name="state" placeholder="User Residential State">
+                <input type="datetime" class="input-field" name="dob" placeholder="User DOB">
+                <input type="password" class="input-field" name="password" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span class="checkspan">I agree to the terms and condition</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+          </div>
+      </div>
+  </section>
+{% endblock main %}
+
+

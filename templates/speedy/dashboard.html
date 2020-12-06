@@ -1,0 +1,141 @@
+
+{% extends "shared/base.html" %}
+{% load static %}
+
+{% block title %}
+  My Dashboard
+{% endblock title %}
+
+
+
+{% block main %}
+  <style>
+    .menus{
+      display: none;
+    }
+  </style>
+<section class="dashboard" style="display: grid; grid-template-columns: 20% 80%;">
+    <div class="sidebarr">
+      <header>
+        <a class="navbar-brand" href="{% url 'index'%}" style="font-size: 2rem; color: yellowgreen; font-weight: bolder; font-style: italic; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+          <!-- <img src="{% static 'images/logo6.png' %}" width="50" height="40" class="d-inline-block align-top" alt="" loading="lazy"> -->
+          <span>SpeedyData</span>
+        </a>
+      </header>
+      <ul>
+        <li><a href="{% url 'dashboard' %}"><i class="fas fa-home"></i>Dashboard</a></li>
+        <li><a href="#servicesection"><i class="fab fa-servicestack"></i>Services</a></li>
+        <li><a href="{% url 'contact' %}"><i class="fas fa-address-book"></i>Contact Us</a></li>
+        <li><a href="#about"><i class="fas fa-address-card"></i>About Us</a></li>
+        <li><a href="#dataplans"><i class="fas fa-hourglass-half"></i>Data Plan</a></li>
+        <li><a href="#"><i class="fas fa-question-circle"></i>FAQ</a></li>
+        <li><a href="#api"><i class="fab fa-quinscape"></i>API</a></li>
+        <li><a href="{% url 'signin' %}"><i class="fas fa-sign-in-alt"></i>Sign In</a></li>
+        <li><a href="{% url 'signin' %}"><i class="fas fa-qrcode"></i>Sign Up</a></li>
+      </ul>
+    </div>
+
+    <div class="mainbarr">
+      <div class="top">
+        <h5><a href="">Airtime</a></h5>
+        <h5><a href="">Purchase Services</a></h5>
+        <h5><a href="">Funding</a></h5>
+        <h5 id="greetings"><a href="">Greetings to {{greet.username}}</a></h5>
+      </div>
+
+      <div class="dailyrecords" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; width: 90%; margin: 0 auto;">
+        <div class="records wb">
+          <span id="recordspan1" class="recordspan"></span>
+          <span id="recordspan2" class="recordspan"></span>
+          <i class="fas fa-qrcode"></i><br>
+          <h5># 5000</h4>
+          <p>Wallet Balance: #0</p>
+          <p>Previous Balance: #0</p>
+        </div>
+        <div class="records ttt">
+          <span id="recordspan1" class="recordspan"></span>
+          <span id="recordspan2" class="recordspan"></span>
+          <i class="fas fa-qrcode"></i><br>
+          <h5># 5000</h4>
+          <p>Today's Transaction Balance: #0</p>
+        </div>
+        <div class="records ttp">
+          <span id="recordspan1" class="recordspan"></span>
+          <span id="recordspan2" class="recordspan"></span>
+          <i class="fas fa-qrcode"></i><br>
+          <h5># 5000</h4>
+          <p>Today's Total Purchase: #0</p>
+        </div>
+        <div class="records t_api">
+          <span id="recordspan1" class="recordspan"></span>
+          <span id="recordspan2" class="recordspan"></span>
+          <i class="fas fa-qrcode"></i><br>
+          <h5># 5000</h4>
+          <p>API Transaction: #0</p>
+        </div>
+      </div>
+
+      <div style="margin: 0 auto; width: 90%; display: grid; grid-template-columns: 2fr 3fr;" >
+        <div class="buyplans">
+          <div class="btn-box">
+            <div class="btn"></div><br>
+            <button type="button" class="sell-btn btn" onclick="lon()">Sell Data</button>
+            <button type="button" class="sell-btn btn" onclick="reter()">Sell Airtime</button><hr>
+
+            <form action="">
+              <label for="pnumber">Phone Number</label><br>
+              <input type="number" class="" placeholder="Input Phone Number" required><br><br>
+
+              <label for="pnumber">Select Network</label><br>
+              <select name="networks" id="">
+                <option value="sm">Choose a network</option>
+                <option value="mtn">MTN</option>
+                <option value="mtn">GLO</option>
+                <option value="mtn">Airtel</option>
+                <option value="mtn">9mobile</option>
+              </select><br><br>
+              <label for="pnumber">Choose Plan</label><br>
+              <select name="plan" id="">
+                <option value="cap">Choose a plan</option>
+                <option value="sme">SME</option>
+                <option value="gift">Gifting</option>
+              </select><br><br>
+              <label for="pnumber">Amount</label><br>
+              <input type="number" class="" placeholder="Input Phone Number" required><br><br>
+
+              <input type="submit" value="Purchase" class="sub btn btn-success">
+            </form><br>
+          </div>
+        </div>
+        <div class="seesales"><br>
+          <input type="submit" value="Purchase" class="sub subi btn btn-primary">
+          <h5>All Transactions</h5><br><br>
+          <h6>No Recent Transaction</h6>
+          <div class="transtable">
+            <h6 class="intranstable">Reference</h6>
+            <h6 class="intranstable">Description</h6>
+            <h6 class="intranstable">Status</h6>
+            <h6 class="intranstable">Action</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+{% endblock main %}
+
+
+
+
+
+
+

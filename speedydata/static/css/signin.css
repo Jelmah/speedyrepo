@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .hero{ */
+    /*  */
+/* } */
+.form-box{
+    position: relative;
+    margin: 15px auto;
+    width: 60%;
+    height: 700px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid yellowgreen;
+    overflow: hidden;
+}
+.button-box{
+    width: 35%;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px yellowgreen;
+    border-radius: 30px;
+
+}
+.toggle-btn{
+    padding: 10px 35px;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 132px;
+    height: 100%;
+    background:linear-gradient(to right, #ff105f, #ffad0f) ;
+    border-radius: 50px;
+    transition: .5s;
+}
+.social-icon{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    text-align: center;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border: 0 0 1px 0 yellowgreen ;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background:linear-gradient(to right, #ff105f, #ffad0f) ;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+#formsignin input, #formsignup input{
+    padding-left: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 5px;
+}
+.checkbox{
+    margin: 30px 10px 30px 0;
+}
+.checkspan{
+    color: #777;
+    font-size: 15px;
+    bottom: 0px;
+    margin: 25px 10px 30px 0;
+}
+#formsignin{
+    left: 210px;
+    margin-top: 80px;
+}
+#formsignup{
+    left: 750px;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (max-width: 768px) {     
+    .button-box{
+        width: 90%;
+        margin: 30px auto;
+        position: relative;
+        box-shadow: 0 0 20px 9px yellowgreen;
+        border-radius: 30px;
+    
+    }
+    
+ }
+
+
+
+
+
+
+
+
+
